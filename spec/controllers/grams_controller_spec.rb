@@ -14,8 +14,6 @@ require 'rails_helper'
     it "should succesffuly show the new form" do
       get :new
       expect(response).to have_http_status(:success)
-
-
     end
   end
 
@@ -28,5 +26,11 @@ require 'rails_helper'
       expect(gram.message).to eq("Hello!")
 
   end 
+
+  it "should properly deal with validation errors" do
+    post :create, params: { gram: { message: '' }}
+    expect(response).to have_http_status(:unprocessable_entity)
+    expect(Gram.count).to eq 0
+end
 end
 end
