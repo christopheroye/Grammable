@@ -73,6 +73,5 @@ gem 'jquery-rails'
 gem 'simple_form'
 gem 'devise'
 gem 'carrierwave', '>= 2.0.0.rc', '< 3.0'
-gem "figaro"
-gem "fog-aws"
-
+gem 'figaro'
+gem 'fog-aws'
