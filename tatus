@@ -1,0 +1,102 @@
+[33mcommit d898bb4ce886723b7688d37a9a73e49a98460067[m
+Author: Christopher Oye <christopheroye@gmail.com>
+Date:   Sun Aug 11 17:41:13 2019 +0000
+
+    Revert "Initial commit"
+    
+    This reverts commit 63729a0a9e1bb3d7079266eac51470a82c5ead3d.
+    
+    Conflicts:
+    	Gemfile
+    	Gemfile.lock
+    	app/assets/javascripts/application.js
+    	app/assets/stylesheets/application.scss
+    	app/views/layouts/application.html.erb
+    	config/environments/production.rb
+    	config/routes.rb
+
+[33mcommit 4141ed6a5ee5c069b9618964efde8d833120f847[m
+Author: Christopher Oye <christopheroye@gmail.com>
+Date:   Sun Aug 11 17:39:11 2019 +0000
+
+    Revert "update devise code"
+    
+    This reverts commit 375c29ee5ccaffba382ab7bc65c4bf5aa7491992.
+    
+    Conflicts:
+    	Gemfile
+    	app/models/user.rb
+    	app/views/devise/confirmations/new.html.erb
+    	config/environments/production.rb
+    	config/initializers/devise.rb
+    	db/schema.rb
+    	spec/controllers/grams_controller_spec.rb
+    	spec/models/user_spec.rb
+    	spec/rails_helper.rb
+
+[33mcommit c5796043693f937209cdaaa7cac8ebf923ed1fee[m
+Merge: 3a2babc 91f2ddf
+Author: Christopher Oye <christopheroye@gmail.com>
+Date:   Wed Aug 7 21:27:56 2019 +0000
+
+    updated code checkout to master
+
+[33mcommit 91f2ddf764d3a2d6fbff29da57bada14d7271b03[m
+Author: Christopher Oye <christopheroye@gmail.com>
+Date:   Wed Aug 7 20:28:54 2019 +0000
+
+    updated code
+
+[33mcommit aee8abe8a23be3aa7a15051f408eb9393bd85744[m
+Author: Christopher Oye <christopheroye@gmail.com>
+Date:   Wed Aug 7 19:58:25 2019 +0000
+
+    connect grams to users
+
+[33mcommit 3a2babc77ed7624562647ea8551a82f5e9fd56c6[m
+Author: Christopher Oye <christopheroye@gmail.com>
+Date:   Tue Aug 6 23:14:16 2019 +0000
+
+    debud code
+
+[33mcommit 375c29ee5ccaffba382ab7bc65c4bf5aa7491992[m
+Author: Christopher Oye <christopheroye@gmail.com>
+Date:   Tue Aug 6 21:51:49 2019 +0000
+
+    update devise code
+
+[33mcommit a3457f43d3fdfe510e2ec15d51e2a4f81edb69bb[m
+Author: Christopher Oye <christopheroye@gmail.com>
+Date:   Tue Aug 6 20:01:45 2019 +0000
+
+    validating grams
+
+[33mcommit 0607f9c70575c079139a7f28f3cf76bec41cff5b[m
+Author: Christopher Oye <christopheroye@gmail.com>
+Date:   Sun Aug 4 04:05:43 2019 +0000
+
+    added devise gem
+
+[33mcommit eba4864f9ca4a838994ba566a55d46e968b6808a[m
+Author: Christopher Oye <christopheroye@gmail.com>
+Date:   Sun Aug 4 04:01:50 2019 +0000
+
+    add grams to database
+
+[33mcommit 0026f9c0327daf2c6074d4ad93ba7a58e80ccdfc[m
+Author: Christopher Oye <christopheroye@gmail.com>
+Date:   Wed Jul 31 19:36:36 2019 +0000
+
+    created test
+
+[33mcommit 0fdc8a94b2442bd850aef017e88f629bf08ebeb0[m
+Author: Christopher Oye <christopheroye@gmail.com>
+Date:   Tue Jul 30 21:50:00 2019 +0000
+
+    added rspec gem
+
+[33mcommit 63729a0a9e1bb3d7079266eac51470a82c5ead3d[m
+Author: Christopher Oye <christopheroye@gmail.com>
+Date:   Tue Jul 30 19:00:50 2019 +0000
+
+    Initial commit

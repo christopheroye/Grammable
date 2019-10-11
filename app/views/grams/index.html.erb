@@ -1,18 +1,21 @@
-<h1>Grams!</h1>
+<body>
+<br>
+<h1 class="text-center">Grams</h1>
 
 <div class="col-10 offset-1 col-sm-8 offset-sm-2 col-md-6 offset-md-3">
   <% @grams.each do |gram| %>
   <div class="card">
+  <div class="card-body">
     <div class="handle"><%= gram.user.email %></div>
-    <%= image_tag gram.picture.url, class: 'img-fluid' %>
+    <%= image_tag gram.picture.url, class: 'img-fluid' %><br /><br />
     <p>
       <%= gram.message %>
     </p>
 
     <div class="gram-actions float-right">
       <% if current_user && current_user == gram.user %>
-        <%= link_to 'Edit', edit_gram_path(gram) %>
-        <%= link_to 'Destroy', gram_path(gram), method: :delete, data: {confirm: 'Are you sure?'} %>
+        <%= link_to 'Edit', edit_gram_path(gram), class: 'btn btn-dark' %>
+        <%= link_to 'Delete', gram_path(gram), class: 'btn btn-danger', method: :delete, data: {confirm: 'Are you sure?'} %>
 
       <% end %>
     </div>
@@ -28,13 +31,20 @@
           <%= comment.message %>
         </div>
       <% end %>
+      <br />
 
       <h4>Add a comment</h4>
       <%= simple_form_for Comment.new, url: gram_comments_path(gram) do |f| %>
         <%= f.input :message %>
-        <%= f.submit 'Add Comment', class: 'my-btn' %>
+        <%= f.submit 'Add Comment', class: 'btn btn-dark' %>
       <% end %>
+      </div>
     </div>
   </div>
+  <br />
+  <br />
   <% end %>
 </div>
+<br /><br /><br /><br />
+
+</body>
