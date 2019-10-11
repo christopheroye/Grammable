@@ -1,24 +1,18 @@
-# README
+## Grammable
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Post your favorite photos to your own personal Gram!
 
-Things you may want to cover:
+Here's a Instagram-like Clone that features user authentication, user comments, image uploading capabilities using Amazon Web Services (AWS), and validations for an online-friendly, picture posting application.
 
-* Ruby version
+## Features 
 
-* System dependencies
+* User authentication
+* User comments
+* Image uploading hosted on Amazon Web Services (AWS)
+* User Add/Delete image upload
 
-* Configuration
+# Screenshots
 
-* Database creation
+## Gram Home
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+<img width="859" alt="Screen Shot 2019-10-10 at 10 55 07 PM" src="https://user-images.githubusercontent.com/50840199/66623467-6ce20000-ebb1-11e9-9bca-75bf3fed522e.png">
